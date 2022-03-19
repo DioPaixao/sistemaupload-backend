@@ -21,6 +21,4 @@ app.use('/file', express.static(path.resolve(__dirname, '..','temp','uploads')))
 
 app.use(require('./routes.js'))
 
-app.listen(process.env.PORT || 3000, (req,res) => {
-	console.log('Servidor rodando')
-})
+app.listen(process.env.PORT || 3000)
